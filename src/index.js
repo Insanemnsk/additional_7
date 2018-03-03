@@ -1,3 +1,4 @@
 module.exports = function solveSudoku(matrix) {
-  // your solution
-}
+  let value = 10;
+  return matrix.map(row => row.map(element => element || value++));
+} 
